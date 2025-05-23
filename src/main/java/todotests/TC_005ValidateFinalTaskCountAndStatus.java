@@ -13,8 +13,8 @@ public class TC_005ValidateFinalTaskCountAndStatus extends TodoTest {
         homePage.addTask("Buy milk");
 	    homePage.addTask("Call mom");
 	    homePage.addTask("Read book");
-        homePage.completeTask(1);   // Mark Task B as completed
-        homePage.deleteTask(0);     // Delete Task A
+        homePage.completeTask(1);   
+        homePage.deleteTask(0);     
 
         
         int expectedCount = 2;

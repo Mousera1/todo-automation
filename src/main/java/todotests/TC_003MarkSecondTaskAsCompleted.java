@@ -9,7 +9,7 @@ public class TC_003MarkSecondTaskAsCompleted extends TodoTest {
 	public void markSecondTaskAsCompleted() {
 	    TestUtil.createTest("Mark Second Task as Complete");
 
-	    // Setup: add the tasks first since this is a fresh browser
+	   
 	    homePage.addTask("Buy milk");
 	    homePage.addTask("Call mom");
 	    homePage.addTask("Read book");

@@ -9,12 +9,12 @@ public class TC_004DeleteFirstTask extends TodoTest {
     public void deleteFirstTask() {
         TestUtil.createTest("Delete First Task");
 
-        // Setup: Add tasks first
+       
         homePage.addTask("Buy milk");
 	    homePage.addTask("Call mom");
 	    homePage.addTask("Read book");
 
-        //Now delete the first task
+        
         homePage.deleteTask(0);
 
         TestUtil.logPass("Deleted the first task");

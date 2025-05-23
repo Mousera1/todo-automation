@@ -37,13 +37,13 @@ public class TestUtil {
         test.pass(message);
     }
 
-    // Simplified logFail method for easy usage
+   
     public static void logFail(WebDriver driver, String message) {
         String screenshotName = "Failure_" + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         logFail(driver, message, screenshotName);
     }
 
-    // Internal method with screenshot name support
+    
     public static void logFail(WebDriver driver, String message, String screenshotName) {
         String path = captureScreenshot(driver, screenshotName);
         try {
@@ -72,7 +72,7 @@ public class TestUtil {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         try {
             File screenshotFile = new File(filePath);
-            new File(folderPath).mkdirs(); // ensure folder exists
+            new File(folderPath).mkdirs(); 
             FileUtils.copyFile(src, screenshotFile);
         } catch (IOException e) {
             e.printStackTrace();
